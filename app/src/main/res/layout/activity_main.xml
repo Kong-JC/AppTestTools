@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:percent="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bacnround_icon">
+
+    <VideoView
+        android:id="@+id/vv_video_test"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        percent:layout_heightPercent="50%"
+        percent:layout_widthPercent="50%" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="20dp"
+        percent:layout_heightPercent="50%"
+        percent:layout_widthPercent="50%">
+
+        <TextView
+            android:id="@+id/tv_product_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/colorGray"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/product_info"
+            android:textSize="@dimen/message_title_text_size"
+            percent:layout_constraintHorizontal_bias="0.0"
+            percent:layout_constraintLeft_toLeftOf="parent"
+            percent:layout_constraintRight_toRightOf="parent"
+            percent:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_product_id"
+            style="@style/item_2_left_attribute"
+            android:text="@string/product_id"
+            percent:layout_constraintHorizontal_bias="0.0"
+            percent:layout_constraintLeft_toLeftOf="parent"
+            percent:layout_constraintRight_toRightOf="@+id/tv_usb_interface_01"
+            percent:layout_constraintTop_toBottomOf="@+id/tv_product_info" />
+
+        <TextView
+            android:id="@+id/tv_product_id_authorize_state"
+            style="@style/item_2_right_attribute"
+            android:text="null"
+            android:textColor="@color/colorRed"
+            percent:layout_constraintBaseline_toBaselineOf="@+id/tv_product_id"
+            percent:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_usb_interface_01"
+            style="@style/item_2_left_attribute"
+            android:text="@string/usb_interface_01"
+            percent:layout_constraintHorizontal_bias="0.0"
+            percent:layout_constraintLeft_toLeftOf="parent"
+            percent:layout_constraintRight_toRightOf="@+id/tv_usb_01_insert_state"
+            percent:layout_constraintTop_toBottomOf="@+id/tv_product_id" />
+
+        <TextView
+            android:id="@+id/tv_usb_01_insert_state"
+            style="@style/item_2_right_attribute"
+            percent:layout_constraintBaseline_toBaselineOf="@+id/tv_usb_interface_01"
+            percent:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_usb_interface_02"
+            style="@style/item_2_left_attribute"
+            android:text="@string/usb_interface_02"
+            percent:layout_constraintHorizontal_bias="0.0"
+            percent:layout_constraintLeft_toLeftOf="parent"
+            percent:layout_constraintRight_toRightOf="parent"
+            percent:layout_constraintTop_toBottomOf="@+id/tv_usb_interface_01" />
+
+        <TextView
+            android:id="@+id/tv_usb_02_insert_state"
+            style="@style/item_2_right_attribute"
+            percent:layout_constraintBaseline_toBaselineOf="@+id/tv_usb_interface_02"
+            percent:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_ethernet_info"
+            style="@style/item_2_left_attribute"
+            android:text="@string/ethernet_info"
+            percent:layout_constraintHorizontal_bias="0.0"
+            percent:layout_constraintLeft_toLeftOf="parent"
+            percent:layout_constraintRight_toRightOf="@+id/tv_usb_interface_02"
+            percent:layout_constraintTop_toBottomOf="@+id/tv_usb_interface_02" />
+
+        <TextView
+            android:id="@+id/tv_ethernet_insert_state_and_ip"
+            style="@style/item_2_right_attribute"
+            android:text="asdfg"
+            percent:layout_constraintBaseline_toBaselineOf="@+id/tv_ethernet_info"
+            percent:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_wifi_info"
+            style="@style/item_2_left_attribute"
+            android:text="@string/wifi_info"
+            percent:layout_constraintHorizontal_bias="0.0"
+            percent:layout_constraintLeft_toLeftOf="parent"
+            percent:layout_constraintRight_toRightOf="@+id/tv_usb_interface_02"
+            percent:layout_constraintTop_toBottomOf="@+id/tv_ethernet_info" />
+
+        <TextView
+            android:id="@+id/tv_wifi_connection_state_signal_source"
+            style="@style/item_2_right_attribute"
+            android:text="asdf"
+            percent:layout_constraintBaseline_toBaselineOf="@+id/tv_wifi_info"
+            percent:layout_constraintRight_toRightOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        percent:layout_heightPercent="50%"
+        percent:layout_widthPercent="50%">
+
+        <TextView
+            android:id="@+id/tv_equipment_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/equipment_info"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/message_title_text_size"
+            percent:layout_constraintLeft_toLeftOf="parent"
+            percent:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_storage_capacity"
+            style="@style/item_3_attribute"
+            android:text="ads"
+            percent:layout_constraintHorizontal_bias="0.0"
+            percent:layout_constraintLeft_toLeftOf="parent"
+            percent:layout_constraintRight_toRightOf="parent"
+            percent:layout_constraintTop_toBottomOf="@+id/tv_equipment_info" />
+
+        <TextView
+            android:id="@+id/tv_software_version"
+            style="@style/item_3_attribute"
+            android:text="asdf"
+            android:textSize="@dimen/message_text_size"
+            percent:layout_constraintLeft_toLeftOf="parent"
+            percent:layout_constraintRight_toRightOf="parent"
+            percent:layout_constraintTop_toBottomOf="@+id/tv_storage_capacity" />
+
+        <TextView
+            android:id="@+id/tv_hardware_version"
+            style="@style/item_3_attribute"
+            android:text="asdfg"
+            android:textSize="@dimen/message_text_size"
+            percent:layout_constraintHorizontal_bias="0.0"
+            percent:layout_constraintLeft_toLeftOf="parent"
+            percent:layout_constraintRight_toRightOf="parent"
+            percent:layout_constraintTop_toBottomOf="@+id/tv_software_version" />
+
+        <TextView
+            android:id="@+id/tv_equipment_model"
+            style="@style/item_3_attribute"
+            android:text="asdfgh"
+            android:textSize="@dimen/message_text_size"
+            percent:layout_constraintHorizontal_bias="0.0"
+            percent:layout_constraintLeft_toLeftOf="parent"
+            percent:layout_constraintRight_toRightOf="parent"
+            percent:layout_constraintTop_toBottomOf="@+id/tv_hardware_version" />
+
+        <TextView
+            android:id="@+id/tv_sn_code"
+            style="@style/item_3_attribute"
+            android:text="asdghjf"
+            android:textSize="@dimen/message_text_size"
+            percent:layout_constraintLeft_toLeftOf="parent"
+            percent:layout_constraintRight_toRightOf="parent"
+            percent:layout_constraintTop_toBottomOf="@+id/tv_equipment_model" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        percent:layout_heightPercent="50%"
+        percent:layout_widthPercent="50%">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</android.support.percent.PercentRelativeLayout>

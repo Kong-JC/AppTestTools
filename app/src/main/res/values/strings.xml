@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">AppTestTools</string>
+    <string name="equipment_info">设备信息 :</string>
+    <string name="storage_capacity">存储容量 :\t</string>
+    <string name="software_version">软件版本 :\t</string>
+    <string name="hardware_version">硬件版本 :\t</string>
+    <string name="equipment_model">设备型号 :\t</string>
+    <string name="sn_code">S\tN\t号 :\t</string>
+
+    <string name="product_info">产品信息 :\t</string>
+    <string name="product_id">产品ID :\t</string>
+    <string name="usb_interface_01">USB接口0 :\t</string>
+    <string name="usb_interface_02">USB接口1 :\t</string>
+    <string name="ethernet_info">以太网 :\t</string>
+    <string name="wifi_info">WiFi :\t</string>
+
+    <string name="product_id_authorize_state">产品ID授权状态</string>
+    <string name="usb_01_insert_state">USB接入状态</string>
+    <string name="usb_02_insert_state">USB接入状态</string>
+    <string name="ethernet_insert_state_and_ip">以太网接入状态和IP</string>
+    <string name="wifi_connection_state_signal_source">WIFI的MAC和信号源</string>
+
+    <string name="insert">已接入</string>
+    <string name="no_insert">未接入</string>
+    <string name="no_open">未打开</string>
+    <string name="open">已打开</string>
+    <string name="null_text">null</string>
+
+</resources>
